@@ -85,6 +85,18 @@ e.g.:
 ...
 }}}
 
+=== Mac
+
+Install Node.js/npm and respective packages:
+
+{{{
+    brew update && brew install node.js
+    npm install
+}}}
+
+Start development server:
+
+* {{{npm run dev}}}
 
 === Windows
 
