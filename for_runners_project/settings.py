@@ -153,7 +153,7 @@ if DEBUG:
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.sqlite3",
-        "NAME": str(__Path(VENV_PATH, "Django-ForRunners-database.sqlite3")),
+        "NAME": str(__Path(BASE_PATH, "Django-ForRunners-database.sqlite3")),
         # 'NAME': ":memory:"
         # https://docs.djangoproject.com/en/dev/ref/databases/#database-is-locked-errors
         "timeout": 30,
@@ -201,7 +201,7 @@ STATIC_URL = "/static/"
 STATIC_ROOT = str(__Path(BASE_PATH, "static"))
 
 MEDIA_URL = "/media/"
-MEDIA_ROOT = str(__Path(VENV_PATH, "media"))  # e.g.: /home/<username>/DjangoForRunnersEnv/media/
+MEDIA_ROOT = str(__Path(BASE_PATH, "media"))
 print("Tracks stored in %r" % MEDIA_ROOT)
 
 
