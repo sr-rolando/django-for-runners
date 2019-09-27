@@ -94,9 +94,17 @@ Install Node.js/npm and respective packages:
     npm install
 }}}
 
+Run (initial) database migration:
+
+  {{{python -m for_runners_project migrate}}}
+
+Create first user:
+
+  {{{python -m for_runners_project createsuperuser}}}
+
 Start development server:
 
-* {{{npm run dev}}}
+  {{{npm run dev}}}
 
 === Windows
 
