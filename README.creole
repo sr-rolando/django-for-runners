@@ -106,6 +106,13 @@ Start development server:
 
   {{{npm run dev}}}
 
+Alternative without using npm:
+
+{{{
+  export PYTHONPATH=.
+  python for_runners_project/__main__.py runserver
+}}}
+
 === Windows
 
 TODO: Create shortcut (via pywin32?)
