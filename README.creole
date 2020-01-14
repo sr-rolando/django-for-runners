@@ -94,6 +94,10 @@ Install Node.js/npm and respective packages:
     npm install
 }}}
 
+Add current directory to python's search path:
+
+  {{{export PYTHONPATH=.}}}
+
 Run (initial) database migration:
 
   {{{python -m for_runners_project migrate}}}
