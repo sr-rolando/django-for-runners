@@ -60,3 +60,5 @@ target/
 
 # Node.js / npm modules. Are installed by 'npm install'.
 node_modules
+
+.env

@@ -20,6 +20,7 @@ print("Use settings:", __file__)
 import logging
 import sys as __sys
 from pathlib import Path as __Path
+import environ
 
 from django.utils.translation import ugettext_lazy as _
 
@@ -31,6 +32,8 @@ from django_tools.settings_utils import FnMatchIps
 # https://github.com/jedie/django-for-runners
 from for_runners.app_settings import *  # @UnusedWildImport
 from for_runners_project.utils.venv import get_venv_path as __get_venv_path
+
+env = environ.Env()
 
 # Build paths inside the project:
 BASE_PATH = __Path(__file__).resolve().parent
@@ -151,7 +154,8 @@ if DEBUG:
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
 
 DATABASES = {
-    "default": {
+    "default": env.db("DATABASE_URL"),
+    "sqlite3": {
         "ENGINE": "django.db.backends.sqlite3",
         "NAME": str(__Path(BASE_PATH, "Django-ForRunners-database.sqlite3")),
         # 'NAME': ":memory:"
