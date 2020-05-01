@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "for_runners"
-version = "0.10.2"
+version = "0.11.0"
 description = "Django for Runners"
 license = "GPL-3.0-only"
 authors = ["Jens Diemer", "Sr. Rolando"]
@@ -9,7 +9,7 @@ homepage = "https://github.com/jedie/django-for-runners"
 
 [tool.poetry.dependencies]
 python = "^3.5"
-django = "~2.1"
+django = "~2.1"                     # FIXME We should be updating this. v3 has been out for a while now.
 django-tools = ">=0.45.3"           # https://github.com/jedie/django-tools
 django-environ = "0.4.5"            # https://github.com/joke2k/django-environ
 autotask = "^0.5.4"                 # https://bitbucket.org/kbr/autotask
@@ -26,7 +26,7 @@ gunicorn = "^19.7.1"                # https://gunicorn.org/
 django-import-export = "^2.0.2"     # https://github.com/django-import-export/django-import-export
 colorlog = "^4.1.0"                 # https://github.com/borntyping/python-colorlog
 django-debug-toolbar = "^2.2"       # http://django-debug-toolbar.readthedocs.io/en/stable/changes.html
-python-tcxparser = "^1.1.0"
+python-tcxparser = "^1.1.0"         # https://github.com/vkurup/python-tcxparser
 
 [tool.poetry.dev-dependencies]
 tox = "*"
