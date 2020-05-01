@@ -26,6 +26,7 @@ gunicorn = "^19.7.1"                # https://gunicorn.org/
 django-import-export = "^2.0.2"     # https://github.com/django-import-export/django-import-export
 colorlog = "^4.1.0"                 # https://github.com/borntyping/python-colorlog
 django-debug-toolbar = "^2.2"       # http://django-debug-toolbar.readthedocs.io/en/stable/changes.html
+python-tcxparser = "^1.1.0"
 
 [tool.poetry.dev-dependencies]
 tox = "*"

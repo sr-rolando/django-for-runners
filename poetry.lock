@@ -202,7 +202,7 @@ Django = ">=2.0"
 diff-match-patch = "*"
 
 [package.dependencies.tablib]
-extras = ["ods", "html", "yaml", "xlsx", "xls"]
+extras = ["xlsx", "html", "ods", "yaml", "xls"]
 version = ">=0.14.0"
 
 [[package]]
@@ -622,6 +622,17 @@ six = ">=1.5"
 
 [[package]]
 category = "main"
+description = "Simple parser for Garmin TCX files"
+name = "python-tcxparser"
+optional = false
+python-versions = "*"
+version = "1.1.0"
+
+[package.dependencies]
+lxml = "*"
+
+[[package]]
+category = "main"
 description = "World timezone definitions, modern and historical"
 name = "pytz"
 optional = false
@@ -924,7 +935,7 @@ docs = ["sphinx", "jaraco.packaging (>=3.2)", "rst.linker (>=1.9)"]
 testing = ["pathlib2", "unittest2", "jaraco.itertools", "func-timeout"]
 
 [metadata]
-content-hash = "9d8ab2777ed6c6724de56c1ed41968434fd360eb9f7cbb3c5476798c256a9ac1"
+content-hash = "c70e7701a6918b81a944c54e4651bcb837a564d07c53ef522ff494640441903b"
 python-versions = "^3.5"
 
 [metadata.files]
@@ -1275,6 +1286,10 @@ python-creole = [
 python-dateutil = [
     {file = "python-dateutil-2.8.1.tar.gz", hash = "sha256:73ebfe9dbf22e832286dafa60473e4cd239f8592f699aa5adaf10050e6e1823c"},
     {file = "python_dateutil-2.8.1-py2.py3-none-any.whl", hash = "sha256:75bb3f31ea686f1197762692a9ee6a7550b59fc6ca3a1f4b5d7e32fb98e2da2a"},
+]
+python-tcxparser = [
+    {file = "python-tcxparser-1.1.0.tar.gz", hash = "sha256:5ffeea80e434ace9da7aa4037aaefc23818477a324e4f986135df6ee584306ed"},
+    {file = "python_tcxparser-1.1.0-py3-none-any.whl", hash = "sha256:b53bd077947ed3f5b16603735dda38edc57da79a55f483803b5755008b57675f"},
 ]
 pytz = [
     {file = "pytz-2019.3-py2.py3-none-any.whl", hash = "sha256:1c557d7d0e871de1f5ccd5833f60fb2550652da6be2693c1e02300743d21500d"},
